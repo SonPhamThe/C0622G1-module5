@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Edit Facility</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/editt.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+  </head>
+  <body class="d-flex flex-column">
+    <!--Phần header của page-->
+    <section class="header d-flex justify-content-center">
+      <div class="wrapper d-flex justify-content-between align-items-center">
+        <a href="/home"><img class="header__logo" src="/images/logo.png" /></a>
+        <div class="col col-md-auto col-lg-3 d-flex" style="margin-left: 10%">
+          <div class="catalog-widget d-none d-sm-block">
+            <div class="catalog-widget-inside" style="visibility: visible">
+              <a
+                href="https://www.tripadvisor.com/Hotel_Review-g298085-d302750-Reviews-Furama_Resort_Danang-Da_Nang_Quang_Nam_Province.html"
+                target="_blank"
+              >
+                <div class="widget-tripadvisor">
+                  <div class="inside">
+                    <div class="widget-tripadvisor-logo">
+                      <img
+                        src="https://smartdata.tonytemplates.com/bestel/wp-content/uploads/2018/05/widget-tripadvisor-logo.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="widget-tripadvisor-rating">
+                      <img
+                        src="https://furamavietnam.com/wp-content/uploads/2018/08/widget-tripadvisor-rating.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="widget-tripadvisor-text">2,746 Reviews</div>
+                  </div>
+                </div>
+              </a>
+              <span
+                class="catalog-widget-toggle js-catalog-widget-toggle"
+              ></span>
+            </div>
+          </div>
+          <div
+            class="catalog-widget-mobile d-flex d-sm-none align-items-center mx-auto"
+          ></div>
+        </div>
+        <div class="header__contact d-flex">
+          <div class="address flex-fill">
+            <div class="d-flex">
+              <img src="/images/map.svg" alt="" class="me-5" />
+              <div class="d-flex flex-column">
+                <p class="fs-5 mb-3 address-size">
+                  103 – 105 Đường Võ Nguyên Giáp, Phường Khuê Mỹ, Quận Ngũ hành
+                  Sơn, Tp. Đà Nẵng, Việt Nam
+                </p>
+                <p class="fs-4">
+                  <span class="fs-4">7.0 km</span> từ Sân bay Quốc tế Đà Nẵng
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="phone-email flex-fill">
+            <div class="d-flex align-items-center mb-3">
+              <img src="/images/telephone.svg" class="me-4" alt="" />
+              <span class="fs-4 text-dark">84-236-3847 333/888</span>
+            </div>
+            <div class="d-flex align-items-center">
+              <img src="/images/envelope.svg" class="me-4" alt="" />
+              <span class="fs-4 text-dark">reservation@furamavietnam.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Phần navbar của page-->
+    <section class="navbar d-flex justify-content-center" id="navbar">
+      <div class="wrapper h-100 d-flex">
+        <ul class="list d-flex text-bg-light">
+          <li
+            class="list__item d-flex justify-content-center align-items-center"
+          >
+            <a href="#">Home</a>
+          </li>
+          <li
+            class="list__item d-flex justify-content-center align-items-center"
+          >
+            <a href="/customers">Customer</a>
+          </li>
+          <li
+            class="list__item d-flex justify-content-center align-items-center"
+          >
+            <a href="/facility">Facility</a>
+          </li>
+          <li
+            class="list__item d-flex justify-content-center align-items-center"
+          >
+            <a href="/contract">Contract</a>
+          </li>
+          <li
+            class="list__item d-flex justify-content-center align-items-center"
+          >
+            <a href="#">Login</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Phần main của page -->
+    <section class="main" style="height: auto !important">
+      <div class="wrapper container-fluid">
+        <div class="row">
+          <div class="col-lg-3">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EXXe-G-_lxI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="col-lg-6">
+            <form
+              class="w-100 border border-2 border-success p-3 bg-success bg-opacity-50 rounded">
+              <div class="mt-3 form-group">
+                <label class="size h6">Facility Type:</label>
+                <div class="input-group">
+                  <input
+                    type="text"
+                    id="facilityName"
+                    class="form-control"
+                    th:field="*{name}"
+                    placeholder="Input Facility name"
+                    name="name"
+                  />
+                  <span class="input-group-text"
+                    ><i class="fa-solid fa-ranking-star"></i
+                  ></span>
+                </div>
+              </div>
+
+              <div class="size form-group">
+                <label class="size h6">Facility name:</label>
+                <div class="input-group">
+                  <input
+                    type="text"
+                    id="facilityName"
+                    class="form-control"
+                    th:field="*{name}"
+                    placeholder="Input Facility name"
+                    name="name"
+                  />
+                  <span class="input-group-text"
+                    ><i class="fa-solid fa-file-signature"></i
+                  ></span>
+                </div>
+              </div>
+
+              <div class="mt-3 form-group">
+                <label for="area" class="size h6">Area (m<sup>2</sup>):</label>
+                <div class="input-group">
+                  <input
+                    type="number"
+                    id="area"
+                    class="form-control"
+                    th:field="*{area}"
+                    placeholder="Input Facility area"
+                    name="area"
+                  />
+                  <span class="input-group-text"
+                    ><i class="fa-solid fa-chart-area"></i
+                  ></span>
+                </div>
+              </div>
+
+              <div class="mt-3 form-group">
+                <label for="cost" class="size h6">Cost:</label>
+                <div class="input-group">
+                  <input
+                    type="text"
+                    id="cost"
+                    class="form-control"
+                    th:field="*{cost}"
+                    placeholder="Input Cost"
+                    name="cost"
+                  />
+                  <span class="input-group-text"
+                    ><i class="fa-solid fa-dollar-sign"></i
+                  ></span>
+                </div>
+              </div>
+
+              <div class="mt-3 form-group">
+                <label for="maxPeople" class="size h6"
+                  >Maximum number of people:</label
+                >
+                <div class="input-group">
+                  <input
+                    type="number"
+                    id="maxPeople"
+                    class="form-control"
+                    th:field="*{maxPeople}"
+                    placeholder="Input maximum number of people"
+                    name="maxPeople"
+                  />
+                  <span class="input-group-text"
+                    ><i class="fa-solid fa-person"></i
+                  ></span>
+                </div>
+              </div>
+
+              <div class="mt-3 form-group" id="standardRoomForm">
+                <label for="standardRoom" class="size h6">Standard room:</label>
+                <div class="input-group">
+                  <input
+                    type="text"
+                    id="standardRoom"
+                    class="form-control"
+                    th:field="*{standardRoom}"
+                    name="standardRoom"
+                    value=" -"
+                    placeholder="input standard room"
+                  />
+                  <span class="input-group-text"
+                    ><i class="fa-solid fa-star"></i
+                  ></span>
+                </div>
+              </div>
+
+              <div class="mt-3 form-group" id="descriptionForm">
+                <label for="description" class="size h6"
+                  >Description other convenience:</label
+                >
+                <div class="input-group">
+                  <input
+                    type="text"
+                    id="description"
+                    class="form-control"
+                    th:field="*{descriptionOtherConvenience}"
+                    name="otherConvenience"
+                    value=" -"
+                    placeholder="input other convenience"
+                  />
+                  <span class="input-group-text"
+                    ><i class="fa-solid fa-book"></i
+                  ></span>
+                </div>
+              </div>
+
+              <div class="mt-3 form-group" id="poolAreaForm">
+                <label for="poolArea" class="size h6"
+                  >Pool area (m<sup>2</sup>):</label
+                >
+                <div class="input-group">
+                  <input
+                    type="text"
+                    id="poolArea"
+                    class="form-control"
+                    th:field="*{poolArea}"
+                    name="poolArea"
+                    value="0"
+                    placeholder="input pool area"
+                  />
+                  <span class="input-group-text"
+                    ><i class="fa-solid fa-person-swimming"></i
+                  ></span>
+                </div>
+              </div>
+
+              <div class="mt-3 form-group" id="numberOfFloorsForm">
+                <label for="numberOfFloors" class="size h6">Number of floors:</label>
+                <div class="input-group">
+                  <input
+                    type="number"
+                    id="numberOfFloors"
+                    class="form-control"
+                    th:field="*{numberOfFloors}"
+                    name="numberOfFloor"
+                    value="0"
+                    placeholder="input number of floor"
+                  />
+                  <span class="input-group-text"
+                    ><i class="fa-solid fa-building"></i
+                  ></span>
+                </div>
+              </div>
+
+              <div
+                class="mt-3 form-group"
+                id="facilityFreeForm"
+                style="display: none"
+              >
+                <label for="facilityFree" class="size h6">Facility free:</label>
+                <div class="input-group">
+                  <input
+                    type="text"
+                    id="facilityFree"
+                    class="form-control"
+                    th:field="*{facilityFree}"
+                    name="facilityFree"
+                    value=" -"
+                    placeholder="input facility free"
+                  />
+                  <span class="input-group-text"
+                    ><i class="fa-solid fa-gift"></i
+                  ></span>
+                </div>
+              </div>
+
+              <div class="mt-3 form-group">
+                <label class="size h6" for="rentType">Rent Type:</label>
+                <div class="input-group">
+                  <select
+                    id="rentType"
+                    class="form-select"
+                    name="rentTypeId"
+                    th:field="*{rentType}"
+                  >
+                    <option
+                      th:each="item : ${rentType}"
+                      th:value="${item.id}"
+                      th:text="${item.name}"
+                    ></option>
+                  </select>
+                  <span class="input-group-text"
+                    ><i class="fa-solid fa-ranking-star"></i
+                  ></span>
+                </div>
+              </div>
+
+              <div class="mt-3 text-center">
+                <button style="margin-left: 0px"
+                  class="btn btn-info btn-outline-success btn-sm border border-2 border-success text-dark"
+                >
+                  -- Cancle <i class="fa-solid fa-floppy-disk"></i> --
+                </button>
+                <button style="margin-right: 0px"
+                  class="btn btn-info btn-outline-success btn-sm border border-2 border-success text-dark"
+                >
+                  -- Save <i class="fa-solid fa-floppy-disk"></i> --
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-3">
+            <h2 class="size1" style="color: #046056">Nhà cái đến từ C06</h2>
+            <p class="size1" style="color: #046056">Chủ cái: ToBiGaming</p>
+            <img
+              class="d-block w-100 h-75"
+              src="https://bcp.cdnchinhphu.vn/334894974524682240/2022/11/3/32-doi-wc-16674553221931373966212.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Phần footer của page-->
+    <section class="footer d-flex justify-content-center mt-5">
+      <div class="wrapper container">
+        <div class="row h-100">
+          <div class="col-6" style="margin-left: 50%">
+            <h3 class="fs-2 text-uppercase text-dark fw-bold mb-4">Furama</h3>
+            <div class="row">
+              <div class="col-3">
+                <div class="d-flex flex-column gap-2">
+                  <a href="#" class="text-dark fs-5">Our hotel</a>
+                  <a href="#" class="text-dark fs-5">Promotions</a>
+                  <a href="#" class="text-dark fs-5">Meetings</a>
+                  <a href="#" class="text-dark fs-5">Brand story</a>
+                  <a href="#" class="text-dark fs-5">Media center</a>
+                  <a href="#" class="text-dark fs-5">Corporate info</a>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="d-flex flex-column gap-2">
+                  <a href="#" class="text-dark fs-5">Lifestyle blog</a>
+                  <a href="#" class="text-dark fs-5">Careers</a>
+                  <a href="#" class="text-dark fs-5">Contact us</a>
+                  <a href="#" class="text-dark fs-5">Notices</a>
+                  <a href="#" class="text-dark fs-5">EGifts</a>
+                  <a href="#" class="text-dark fs-5">Expore south-east asia </a>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="d-flex flex-column gap-2">
+                  <a href="#" class="text-dark fs-5">Travel agents</a>
+                  <a href="#" class="text-dark fs-5">Sitemap</a>
+                  <a href="#" class="text-dark fs-5">Terms & Conditions</a>
+                  <a href="#" class="text-dark fs-5">Privacy policy</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            style="margin-left: 50%"
+            class="col-sm-auto col-lg-12 col-xl-auto"
+          >
+            <div class="footer-copyright text-left">
+              <img
+                src="https://furamavietnam.com/wp-content/uploads/2019/02/Ariyana-Tourism-Complex-02-2.png"
+                alt="Ariyana Tourism Complex"
+                width="500px;"
+              />
+              <div class="clearfix d-md-none"></div>
+              © 2022 Furama Resort Danang.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
