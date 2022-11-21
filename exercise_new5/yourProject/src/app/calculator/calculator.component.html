@@ -1,0 +1,16 @@
+<p>calculator works!</p>
+
+<h3>Caculator</h3>
+<table>
+  <TR>
+    <td colspan="2"><input [(ngModel)]="inp1" type="text"/></td>
+    <td colspan="2"><input [(ngModel)]="inp2" type="text"/></td>
+  </TR>
+  <tr>
+    <td><button (click)="add()" style="width: 100%">Cộng(+)</button></td>
+    <td><button (click)="apf()"  style="width: 100%">Trừ(-)</button></td>
+    <td><button (click)="core()"  style="width: 100%">Nhân(x)</button></td>
+    <td><button (click)="divide()"  style="width: 100%">Chia(/)</button></td>
+  </tr>
+</table>
+<h4>Kết Quả = {{result}} </h4>
