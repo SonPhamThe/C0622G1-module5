@@ -1,0 +1,18 @@
+.LichKS {
+  background: url(../images/Calendar.png) no-repeat left top;
+}
+.pageCaption {
+  height: 32px;
+  color: #0e5fe4;
+  font-size: 22px;
+  padding: 2px 0;
+  font-weight: bold;
+  padding-left: 40px;
+}
+div {
+  display: block;
+} 
+element.style {
+  margin-right: auto;
+  margin-left: auto;
+}

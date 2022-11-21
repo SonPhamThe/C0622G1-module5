@@ -1,0 +1,33 @@
+.LichKS {
+  background: url(../images/Calendar.png) no-repeat left top;
+}
+.pageCaption {
+  height: 32px;
+  color: #0e5fe4;
+  font-size: 22px;
+  padding: 2px 0;
+  font-weight: bold;
+  padding-left: 40px;
+}
+div {
+  display: block;
+} 
+element.style {
+  margin-right: auto;
+  margin-left: auto;
+}
+.GreyBox {
+  border: 1px solid #c5c5c5;
+  background: #ffffff;
+  color: #333333;
+  position: relative;
+  padding: 2px 2px 3px 3px;
+}
+html, body, #formbody {
+  font-size: 12px;
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: #000000;
+}
