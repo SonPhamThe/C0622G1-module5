@@ -6,6 +6,8 @@ import { FuramaComponent } from './furama/furama.component';
 import { ListFacilityComponent } from './list-facility/list-facility.component';
 import { EditFacilityComponent } from './edit-facility/edit-facility.component';
 import { AddFacilityComponent } from './add-facility/add-facility.component';
+import { ListCustomerComponent } from './list-customer/list-customer.component';
+import { EditCustomerComponent } from './edit-customer/edit-customer.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { AddFacilityComponent } from './add-facility/add-facility.component';
     FuramaComponent,
     ListFacilityComponent,
     EditFacilityComponent,
-    AddFacilityComponent
+    AddFacilityComponent,
+    ListCustomerComponent,
+    EditCustomerComponent
   ],
   imports: [
     BrowserModule
