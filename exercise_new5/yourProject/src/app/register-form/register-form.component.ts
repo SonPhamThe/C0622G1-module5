@@ -1,59 +1,46 @@
 import {Component, OnInit} from '@angular/core';
-import {AbstractControl, FormBuilder, FormGroup, ValidationErrors, ValidatorFn, Validators} from '@angular/forms';
+import {AbstractControl, FormBuilder, FormGroup, ValidatorFn, Validators} from '@angular/forms';
 
-
-// @ts-ignore
-export const reConfirmPassword: ValidatorFn = (control: AbstractControl): ValidationErrors | null => {
+export const reconfirmPassword: ValidatorFn = (control: AbstractControl) : Validators | null => {
   const password = control.get('password');
   const confirmPassword = control.get('confirmPassword');
-
-  // tslint:disable-next-line:triple-equals
-  if (password && confirmPassword  && password.value != confirmPassword.value) {
-    return {reConfirmPassword: true};
+  if (password && confirmPassword && password.touched && confirmPassword.touched && password.value !== confirmPassword.value) {
+    return {"reconfirmPassword": true}
   } else {
     return null;
   }
-};
+}
 
 @Component({
-  selector: 'app-assignment',
-  templateUrl: './assignment.component.html',
-  styleUrls: ['./assignment.component.css']
+  selector: 'app-register-form',
+  templateUrl: './register-form.component.html',
+  styleUrls: ['./register-form.component.css']
 })
+export class RegisterFormComponent implements OnInit {
+  title = 'AngularForm';
 
-export class AssignmentComponent implements OnInit {
+  rfForm = this.formBuilder.group({
+    name: ['', [Validators.required,
+      Validators.minLength(5)]],
+    email: ['',[Validators.required, Validators.pattern('\\w+@\\w+.\\w+')]],
+    password: ['',[Validators.required]],
+    confirmPassword: ['',[Validators.required]],
+    country: ['Viet Nam', [Validators.required]],
+    age: ['', [Validators.min(18),Validators.max(100)]],
+    gender: [0],
+    phone: ['',[Validators.required, Validators.pattern('^\\+84\\d{9,10}$')]],
+  }, {validators: reconfirmPassword});
 
-  rfStudent: FormGroup;
-
-  // tslint:disable-next-line:variable-name
-  constructor(private _formBuilder: FormBuilder) {
+  constructor(private formBuilder: FormBuilder) {
   }
 
   ngOnInit(): void {
-    this.rfStudent = this._formBuilder.group({
-      name: ['Nguyen Thanh Hai',
-        [Validators.required,
-          Validators.minLength(5)
-        ]],
-      point: [10,
-        [Validators.required,
-          Validators.min(0)
-        ]],
-      address: ['Duy Trung, Duy Xuyen, Quang Nam',
-        [Validators.required,
-          Validators.minLength(5)
-        ]],
-      password: ['',
-        [Validators.required
-        ]],
-      confirmPassword: ['']
-
-    }, {validators: reConfirmPassword});
+    // .group để tạo các thuộc tính
   }
 
   onSubmit() {
-    if (this.rfStudent.valid) {
-      console.log(this.rfStudent.value);
+    if (this.rfForm.valid) {
+      console.log(this.rfForm.value);
     }
   }
 }
