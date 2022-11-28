@@ -1,0 +1,101 @@
+<div class="row">
+  <div class="col-12">
+    <div class="card border-primary">
+      <h3 class="card-header bg-primary">Form Create Product</h3>
+      <div class="card-body">
+        <!-- <form [formGroup]="productForm" (ngSubmit)="submit()">
+          <table>
+            <tr>
+              <td>Mã sản phẩm:</td>
+              <td><input type="number" formControlName="id"></td>
+            </tr>
+            <tr>
+              <td>Tên sản phẩm:</td>
+              <td><input type="text" formControlName="name"></td>
+            </tr>
+            <tr>
+              <td>Giá sản phẩm</td>
+              <td><input type="number" formControlName="price"></td>
+            </tr>
+            <tr>
+              <td>Mô tả về sản phẩm</td>
+              <td><input type="text" formControlName="description"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><button>Tạo mới</button></td>
+            </tr>
+          </table>
+        </form> -->
+        <form
+          [formGroup]="productForm"
+          (ngSubmit)="submit()"
+          autocomplete="off"
+        >
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input
+              formControlName="name"
+              type="text"
+              class="form-control"
+              id="name"
+              [ngClass]="
+                productForm.controls['name'].touched
+                  ? productForm.controls['name'].invalid
+                    ? 'is-invalid'
+                    : 'is-valid'
+                  : ''
+              "
+            />
+            <div class="invalid-feedback">
+              <div
+                *ngIf="
+                  productForm.controls['name'].hasError('required') &&
+                  productForm.controls['name'].touched
+                "
+              >
+                Please enter a name.
+              </div>
+              <div
+                *ngIf="
+                  productForm.controls['name'].hasError('minlength') &&
+                  productForm.controls['name'].touched
+                "
+              >
+                A name's min length is 5 characters.
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="price" class="form-label">Price</label>
+            <input
+              formControlName="price"
+              type="text"
+              class="form-control"
+              id="price"
+              [ngClass]="
+                productForm.controls['price'].touched
+                  ? productForm.controls['price'].invalid
+                    ? 'is-invalid'
+                    : 'is-valid'
+                  : ''
+              "
+            />
+            <div class="invalid-feedback">
+              <div
+                *ngIf="
+                  productForm.controls['price'].hasError('required') &&
+                  productForm.controls['price'].touched
+                "
+              >
+                Please enter the Price.
+              </div>
+              <div
+                *ngIf="
+                  productForm.controls['price'].hasError('min') &&
+                  productForm.controls['price'].touched
+                "
+              >
+                Min Price is 0.
+              </div>

@@ -14,7 +14,7 @@ import {RatingBarComponent} from './rating-bar/rating-bar.component';
 import {CountdownTimerComponent} from './countdown-timer/countdown-timer.component';
 import {RegisterFormComponent} from './register-form/register-form.component';
 import { LoginFormComponent } from './login-form/login-form.component';
-import { SearchDictonaryComponent } from './search-dictonary/search-dictonary.component';
+
 import { ProductManagementComponent } from './product-management/product-management.component';
 
 @NgModule({
@@ -31,7 +31,6 @@ import { ProductManagementComponent } from './product-management/product-managem
     CountdownTimerComponent,
     RegisterFormComponent,
     LoginFormComponent,
-    SearchDictonaryComponent,
     ProductManagementComponent
   ],
   imports: [

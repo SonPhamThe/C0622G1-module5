@@ -21,6 +21,5 @@ export class LoginFormComponent implements OnInit {
   getLoginInfo(): void {
     console.log('Thông tin đăng kí: ');
     console.log(this.loginFormGroup.value);
-    
   }
 }
