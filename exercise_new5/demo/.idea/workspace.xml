@@ -1,15 +1,765 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="19163140-fcba-4c68-9b35-2ba7bfe948b2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../yourProject/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../yourProject/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../yourProject/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../yourProject/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../yourProject/src/app/login-form/login-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../yourProject/src/app/login-form/login-form.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../yourProject/src/app/login-form/login-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../yourProject/src/app/login-form/login-form.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../yourProject/src/app/search-dictonary/search-dictonary.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../yourProject/src/app/search-dictonary/search-dictonary.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../yourProject/src/app/search-dictonary/search-dictonary.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../yourProject/src/app/search-dictonary/search-dictonary.component.ts" beforeDir="false" />
+    <list default="true" id="bc81d66e-1fc5-4a62-8354-4bde0626a877" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/data/product.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app-routing.module_20221128103308.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app-routing.module_20221128103822.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app-routing.module_20221128103826.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app-routing.module_20221128103833.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app-routing.module_20221128103841.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app-routing.module_20221128103843.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app-routing.module_20221128103848.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app-routing.module_20221128103851.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app-routing.module_20221128103911.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app-routing.module_20221128103916.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app-routing.module_20221128103950.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app-routing.module_20221128104009.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app-routing.module_20221128113931.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app-routing.module_20221128113935.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app-routing.module_20221128113940.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app-routing.module_20221128113943.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app-routing.module_20221128113946.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app-routing.module_20221128113948.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app-routing.module_20221128113951.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app-routing.module_20221128113953.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app-routing.module_20221128113957.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app-routing.module_20221128114001.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app-routing.module_20221128114003.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app-routing.module_20221128114006.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app-routing.module_20221128114009.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app-routing.module_20221128114012.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app-routing.module_20221128114014.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app-routing.module_20221128114019.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app.component_20221128103308.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app.component_20221128114211.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app.component_20221128114214.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app.component_20221128114240.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app.component_20221128114250.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app.component_20221128114252.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app.component_20221128114254.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app.component_20221128114301.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app.component_20221128114310.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app.component_20221128114312.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app.component_20221128114329.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app.component_20221128114332.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app.component_20221128160826.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app.component_20221128160828.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app.component_20221128160835.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app.component_20221128160906.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app.component_20221128160910.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app.module_20221128104453.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app.module_20221128104739.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app.module_20221128104741.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app.module_20221128104743.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app.module_20221128113843.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app.module_20221128113851.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app.module_20221128113857.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app.module_20221128113902.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app.module_20221128113905.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/app.module_20221128113912.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128104428.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128104428.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128151923.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128151925.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152012.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152016.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152019.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152022.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152024.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152029.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152039.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152041.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152042.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152044.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152217.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152220.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152222.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152224.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152234.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152237.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152303.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152309.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152312.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152316.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152321.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152325.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152326.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152329.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152335.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152341.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152440.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152442.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152446.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152451.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152457.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152506.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152509.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152511.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152515.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152518.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152520.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152523.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152524.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152527.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152529.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152530.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128152532.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128153928.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128153931.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128153933.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128153939.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154028.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154039.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154044.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154308.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154311.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154312.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154515.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154525.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154526.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154537.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154542.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154543.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154553.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154555.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154558.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154600.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154622.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154626.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154628.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154631.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154632.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154641.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154645.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154651.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154655.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154656.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154659.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154700.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154703.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154704.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154715.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154717.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154759.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154803.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154806.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154824.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154835.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154837.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154850.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154852.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154856.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154901.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154902.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154905.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154906.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154909.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154913.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154923.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154925.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154936.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154938.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128154939.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155024.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155136.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155138.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155142.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155144.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155147.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155149.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155152.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155156.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155448.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155451.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155454.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155455.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155459.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155518.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155528.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155537.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155542.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155545.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155555.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155600.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155602.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155604.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155606.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155608.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155624.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155626.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155631.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155650.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155652.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155658.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155702.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155712.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155713.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155716.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155718.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155721.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155726.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155728.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155730.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155733.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155738.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155740.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155741.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155743.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155750.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155754.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155759.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155801.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155813.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155822.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155827.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155828.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155832.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155837.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155850.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155857.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155859.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155901.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155906.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155908.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155909.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155913.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155917.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155920.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128155958.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160004.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160006.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160011.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160016.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160017.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160025.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160056.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160105.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160107.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160117.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160119.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160142.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160148.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160151.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160153.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160159.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160201.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160202.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160206.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160207.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160208.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160214.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160218.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160300.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160301.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160309.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160310.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160315.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160320.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160326.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160328.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160356.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160407.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160409.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160413.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160414.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160416.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160417.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160419.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160423.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160424.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160429.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160431.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160439.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128160611.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128161011.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128161013.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128161019.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128161119.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128161121.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128161151.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128161154.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128161157.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128161205.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128161217.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128161244.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128161250.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128161256.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128161300.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128161311.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128161323.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128161331.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128161337.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128162254.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128162255.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128162258.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128162300.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128162307.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128162308.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128162314.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128162318.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128162321.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128162325.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128162327.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128162422.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128162427.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128162435.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128162442.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128162449.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128162451.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128162526.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128162537.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128162544.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128162558.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128162608.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128162622.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128162637.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128162708.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128162743.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128162759.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128162813.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128162827.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128170818.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128170819.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-create/product-create.component_20221128170821.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128104439.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128104439.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128163225.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128163230.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128163234.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128163240.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128164152.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128164153.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128164159.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128164201.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128164208.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128164210.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128164248.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128164252.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128164254.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128164258.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128164303.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128164306.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128164309.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128164313.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128164316.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128164320.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128164325.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128164611.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128164615.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128164618.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128164620.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128164623.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128164630.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128164633.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128164638.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128164640.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128164643.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128164652.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128164654.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128164655.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128165133.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128165137.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128165139.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128165143.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128165144.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128165639.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128165643.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128165716.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128165717.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128165721.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128165723.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128165732.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128165734.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128165740.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128165745.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128165748.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128165757.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128165801.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128165808.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128165810.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128165813.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128165814.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128165816.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128165821.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128165823.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128165826.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128165827.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128165828.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128165832.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128165839.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128165847.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128165848.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128165852.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128165859.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128165905.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128165908.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128165914.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128170027.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128170221.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128170242.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128170244.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128170306.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128170311.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128170318.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128170321.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128170323.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128170326.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128170331.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128170335.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128170340.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128170344.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128170346.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128170347.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128170350.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128170352.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128170441.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128170444.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128170450.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128170457.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128170833.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128170843.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128170850.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128170858.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128170907.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128170911.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128171013.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-edit/product-edit.component_20221128171015.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128104404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128104404.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128110950.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128110955.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128110956.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128110958.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128110959.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128111007.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128111013.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128111045.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128111048.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128111052.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128111055.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128111117.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128111118.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128111129.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128111132.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128111133.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128111136.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128111138.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128111141.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128111147.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128111158.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128111201.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128111209.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128111211.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128111213.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128111214.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128111217.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128111219.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128111220.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128112440.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128112442.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128112446.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128112453.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128112455.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128112457.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128112458.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128112500.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128112521.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128112523.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128112527.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128112534.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128112537.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128112541.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128112544.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128112547.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128112842.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128112844.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128112846.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128112849.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128112852.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128112857.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128112900.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128112905.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128112908.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128112910.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128112916.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128112922.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128112926.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128112928.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128112932.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128112940.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128112943.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128112946.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128112957.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128112959.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113003.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113006.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113009.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113014.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113017.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113020.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113029.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113031.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113032.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113039.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113040.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113043.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113047.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113050.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113053.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113057.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113058.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113100.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113105.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113112.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113117.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113119.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113130.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113132.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113137.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113141.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113157.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113341.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113348.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113405.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113409.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113415.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113420.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113445.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113446.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113458.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113504.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113519.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113524.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113525.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113530.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113540.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113542.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113545.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113549.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113552.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113556.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113603.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113607.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113611.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113615.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113617.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113626.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113700.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113705.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113706.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113726.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128113727.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128115105.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128115131.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128151623.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128151634.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128160755.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128160801.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128160807.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/product-list/product-list.component_20221128160818.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105325.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105352.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105356.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105357.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105358.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105402.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105405.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105425.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105431.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105513.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105519.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105521.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105526.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105527.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105533.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105537.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105544.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105547.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105549.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105551.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105553.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105556.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105558.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105600.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105605.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105611.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105613.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105616.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105618.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105621.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105623.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105625.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105628.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105630.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105633.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105636.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105639.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105643.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105648.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105658.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105701.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105705.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105708.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105722.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105726.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105728.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105730.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105732.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105738.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105741.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105745.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105749.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105752.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105754.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105800.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105803.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105810.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105817.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105823.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105825.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105828.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105831.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105834.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105837.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105841.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105846.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105848.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105851.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105855.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105856.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105900.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105919.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105923.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105926.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105932.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105936.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105939.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105943.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105946.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105948.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105949.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105952.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105955.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128105957.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128110116.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128110118.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128110122.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128110123.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128110125.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128110127.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128110129.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128110134.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128110137.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128110139.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128110140.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128110142.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128110145.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128110146.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128110150.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128110152.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128110154.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128110204.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128115016.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128115021.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128115303.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/app/service/product-service.service_20221128115306.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/index_20221128103308.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/index_20221128114853.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/index_20221128115158.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/index_20221128115202.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/index_20221128115204.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/model/product,ts_20221128104043" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/model/product,ts_20221128104055" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/model/product,ts_20221128104058" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/model/product,ts_20221128104103" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/model/product,ts_20221128104105" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/model/product_20221128104104.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/model/product_20221128104120.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/model/product_20221128104125.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/model/product_20221128104158.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/model/product_20221128104203.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/model/product_20221128104215.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/model/product_20221128104217.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/model/product_20221128104222.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/model/product_20221128104223.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/model/product_20221128104227.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/model/product_20221128104232.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/model/product_20221128104236.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/model/product_20221128104239.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/model/product_20221128104247.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/model/product_20221128104252.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/model/product_20221128104254.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/service/ProductService_20221128104851.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/service/ProductService_20221128104900.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/service/ProductService_20221128104903.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/service/ProductService_20221128104906.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/service/ProductService_20221128104908.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/service/ProductService_20221128104911.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/service/ProductService_20221128104913.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/service/ProductService_20221128104918.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/service/ProductService_20221128104924.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/demo/src/service/ProductService_20221128104925.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/browserslist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/e2e/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/e2e/src/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/e2e/src/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/e2e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/app/product-create/product-create.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/app/product-create/product-create.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/app/product-create/product-create.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/app/product-create/product-create.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/app/product-delete/product-delete.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/app/product-delete/product-delete.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/app/product-delete/product-delete.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/app/product-delete/product-delete.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/app/product-edit/product-edit.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/app/product-edit/product-edit.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/app/product-edit/product-edit.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/app/product-edit/product-edit.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/app/product-list/product-list.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/app/product-list/product-list.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/app/product-list/product-list.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/app/product-list/product-list.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/app/service.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/app/service.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/app/service/product-service.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/app/service/product-service.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/model/product.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../managementProduct/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +772,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2I9vK7CPjho0mePeAayf24gFis2" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2ICmccjR5oFsKDG5UN02dZvmuNj" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -33,38 +782,59 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/mesohuy999/Documents/C0622G1-module5/exercise_new5/yourProject",
+    "last_opened_file_path": "/home/mesohuy999/Documents/C0622G1-module5/exercise_new5/demo",
+    "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "ts.external.directory.path": "/home/mesohuy999/Documents/C0622G1-module5/exercise_new5/demo/demo/node_modules/typescript/lib",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/home/mesohuy999/Documents/C0622G1-module5/exercise_new5/demo/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration name="Tests (demo)" type="JavaScriptTestRunnerKarma">
+      <config-file value="$PROJECT_DIR$/karma.conf.js" />
+      <working-directory value="$PROJECT_DIR$" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="E2E Tests (demo)" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/e2e/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="19163140-fcba-4c68-9b35-2ba7bfe948b2" name="Changes" comment="" />
-      <created>1669606546672</created>
+      <changelist id="bc81d66e-1fc5-4a62-8354-4bde0626a877" name="Changes" comment="" />
+      <created>1669694021507</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1669606546672</updated>
-      <workItem from="1669606547952" duration="30000" />
-      <workItem from="1669610873946" duration="10000" />
+      <updated>1669694021507</updated>
+      <workItem from="1669694026224" duration="13330000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>

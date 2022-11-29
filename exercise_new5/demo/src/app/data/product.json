@@ -1,0 +1,122 @@
+{
+  "products": [
+    {
+      "id": 3,
+      "name": "Allistir Geer",
+      "price": 24,
+      "description": "Sipes, Crona and Fahey",
+      "category": {
+        "id": 1,
+        "name": "Smith"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Carlota Strainge",
+      "price": 53,
+      "description": "Spencer Group",
+      "category": {
+        "id": 1,
+        "name": "Smith"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Cristie Argent",
+      "price": 81,
+      "description": "Daugherty-Kulas",
+      "category": {
+        "id": 1,
+        "name": "Smith"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Izak Ashlee",
+      "price": 34,
+      "description": "Turner-Green",
+      "category": {
+        "id": 1,
+        "name": "Smith"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Hertha Bristoe",
+      "price": 93,
+      "description": "Skiles-Hahn",
+      "category": {
+        "id": 2,
+        "name": "Carroll"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Hertha Fernan",
+      "price": 31,
+      "description": "Will-Koch",
+      "category": {
+        "id": 1,
+        "name": "Smith"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Gretal Heningham",
+      "price": 12,
+      "description": "Sauer-Kutch",
+      "category": {
+        "id": 2,
+        "name": "Carroll"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Davin Stapele",
+      "price": 40,
+      "description": "Dibbert and Sons",
+      "category": {
+        "id": 1,
+        "name": "Smith"
+      }
+    },
+    {
+      "id": 19,
+      "name": "zxcvbnm",
+      "price": 852,
+      "description": "qwertyuiop",
+      "category": {
+        "id": 3,
+        "name": "ngu"
+      }
+    },
+    {
+      "id": 20,
+      "name": "asdfghjkl",
+      "price": 7987,
+      "description": "sdfghjk",
+      "category": {
+        "id": 4,
+        "name": "ngok"
+      }
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Smith"
+    },
+    {
+      "id": 2,
+      "name": "Carroll"
+    },
+    {
+      "id": 3,
+      "name": "ngu"
+    },
+    {
+      "id": 4,
+      "name": "ngok"
+    }
+  ]
+}
