@@ -1,0 +1,19 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Carlota Strainge",
+      "age": 17
+    },
+    {
+      "id": 2,
+      "name": "Carlota Strainge",
+      "age": 17
+    },
+    {
+      "id": 3,
+      "name": "Carlota Strainge",
+      "age": 17
+    }
+  ]
+}

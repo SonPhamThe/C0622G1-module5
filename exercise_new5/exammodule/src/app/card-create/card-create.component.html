@@ -1,0 +1,213 @@
+<div class="container">
+  <h2>Form Create Card</h2>
+  <a class="btn btn-warning" routerLink="">List Card Car</a>
+  <form [formGroup]="cardForm" (ngSubmit)="submit()" autocomplete="off">
+    <div class="mb-3">
+      <label for="price" class="form-label">Price</label>
+      <input
+        formControlName="price"
+        type="text"
+        class="form-control"
+        id="price"
+        [ngClass]=" cardForm.controls['price'].touched
+              ? cardForm.controls['price'].invalid
+              ? 'is-invalid'
+              : 'is-valid'
+            : ''
+        "
+      />
+      <div class="invalid-feedback">
+        <div
+          *ngIf="
+            cardForm.controls['price'].hasError('required') &&
+            cardForm.controls['price'].touched
+          "
+        >
+          Please enter a price.
+        </div>
+        <div
+          *ngIf="
+            cardForm.controls['price'].hasError('min') &&
+            cardForm.controls['price'].touched
+          "
+        >
+          A price must be >0
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="address1" class="form-label">ADDRESS 1</label>
+      <input
+        formControlName="address1"
+        type="text"
+        class="form-control"
+        id="address1"
+        [ngClass]=" cardForm.controls['address1'].touched
+              ? cardForm.controls['address1'].invalid
+              ? 'is-invalid'
+              : 'is-valid'
+            : ''
+        "
+      />
+      <div class="invalid-feedback">
+        <div
+          *ngIf="
+            cardForm.controls['address1'].hasError('required') &&
+            cardForm.controls['address1'].touched
+          "
+        >
+          Please enter a address.
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="address2" class="form-label">ADDRESS 2</label>
+      <input
+        formControlName="address2"
+        type="text"
+        class="form-control"
+        id="address2"
+        [ngClass]=" cardForm.controls['address2'].touched
+              ? cardForm.controls['address2'].invalid
+              ? 'is-invalid'
+              : 'is-valid'
+            : ''
+        "
+      />
+      <div class="invalid-feedback">
+        <div
+          *ngIf="
+            cardForm.controls['address2'].hasError('required') &&
+            cardForm.controls['address2'].touched
+          "
+        >
+          Please enter a address.
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="startDate" class="form-label">Start Date</label>
+      <input
+        formControlName="startDate"
+        type="date"
+        class="form-control"
+        id="startDate"
+        [ngClass]=" cardForm.controls['startDate'].touched
+              ? cardForm.controls['startDate'].invalid
+              ? 'is-invalid'
+              : 'is-valid'
+            : ''
+        "
+      />
+      <div class="invalid-feedback">
+        <div
+          *ngIf="
+            cardForm.controls['startDate'].hasError('required') &&
+            cardForm.controls['startDate'].touched
+          "
+        >
+          Please enter a Start Date.
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="hourStart" class="form-label">Hour Start</label>
+      <input
+        formControlName="hourStart"
+        type="time"
+        class="form-control"
+        id="hourStart"
+        [ngClass]=" cardForm.controls['hourStart'].touched
+              ? cardForm.controls['hourStart'].invalid
+              ? 'is-invalid'
+              : 'is-valid'
+            : ''
+        "
+      />
+      <div class="invalid-feedback">
+        <div
+          *ngIf="
+            cardForm.controls['hourStart'].hasError('required') &&
+            cardForm.controls['hourStart'].touched
+          "
+        >
+          Please enter a Hour Start.
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="houseCar" class="form-label">House Car:</label>
+      <select class="form-control" id="houseCar" formControlName="houseCar" [ngClass]="
+          cardForm.controls['houseCar'].touched
+            ? cardForm.controls['houseCar'].invalid
+              ? 'is-invalid'
+              : 'is-valid'
+            : ''
+        ">
+        <option value="Select" selected>Select</option>
+        <option *ngFor="let item of houseCarList" [ngValue]="item">{{item.name}}</option>
+      </select>
+      <div class="invalid-feedback">
+        <div
+          *ngIf="
+            cardForm.controls['houseCar'].hasError('required') &&
+            cardForm.controls['houseCar'].touched
+          "
+        >
+          Please select one option.
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="count" class="form-label">Count</label>
+      <input
+        formControlName="count"
+        type="text"
+        class="form-control"
+        id="count"
+        [ngClass]=" cardForm.controls['count'].touched
+              ? cardForm.controls['count'].invalid
+              ? 'is-invalid'
+              : 'is-valid'
+            : ''
+        "
+      />
+      <div class="invalid-feedback">
+        <div
+          *ngIf="
+            cardForm.controls['count'].hasError('required') &&
+            cardForm.controls['count'].touched
+          "
+        >
+          Please enter a count.
+        </div>
+        <div
+          *ngIf="
+            cardForm.controls['count'].hasError('min') &&
+            cardForm.controls['count'].touched
+          "
+        >
+          A price must be >0
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <a class="btn btn-warning" routerLink="">
+        <button>
+          Back List Card
+        </button>
+      </a>
+
+      <button type="submit" class="btn btn-primary" [disabled]="!cardForm.valid">
+        Create New
+      </button>
+    </div>
+  </form>
+</div>

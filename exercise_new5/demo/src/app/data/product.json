@@ -101,7 +101,7 @@
       }
     }
   ],
-  "categories": [
+  "category": [
     {
       "id": 1,
       "name": "Smith"

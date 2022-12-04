@@ -1,0 +1,27 @@
+<h1>Xoá sản phẩm</h1>
+<form [formGroup]="studentForm" *ngIf="studentForm" (ngSubmit)="deleteStudent(id)">
+  <table>
+    <tr>
+      <td>Name:</td>
+      <td><input type="text" formControlName="name"></td>
+    </tr>
+    <tr>
+      <td>Day Of Birth</td>
+      <td><input type="date" formControlName="dayOfBirth"></td>
+    </tr>
+    <tr>
+      <td>Score</td>
+      <td><input type="number" formControlName="score"></td>
+    </tr>
+    <tr>
+      <td>Class Room</td>
+      <td><input type="text" formControlName="class"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <button>Delete</button>
+      </td>
+    </tr>
+  </table>
+</form>

@@ -1,0 +1,31 @@
+<h1>Edit Student</h1>
+<a class="btn btn-warning" routerLink="/student/list">Create Student</a>
+<h6>{{message}}</h6>
+<form [formGroup]="studentForm" *ngIf="studentForm" (ngSubmit)="updateStudent(id)">
+  <table>
+    <tr>
+      <td>Name:</td>
+      <td><input type="text" formControlName="name"></td>
+    </tr>
+    <tr>
+      <td>Day Of Birth</td>
+      <td><input type="date" formControlName="dayOfBirth"></td>
+    </tr>
+    <tr>
+      <td>Score</td>
+      <td><input type="number" formControlName="score"></td>
+    </tr>
+    <tr>
+      <td>Class</td>
+      <select formControlName="class" [compareWith]="equals" >
+        <option *ngFor="let item of classList"  [ngValue]="item" >{{item.name}}</option>
+      </select>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <button>Edit</button>
+      </td>
+    </tr>
+  </table>
+</form>

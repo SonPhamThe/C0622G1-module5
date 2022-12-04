@@ -1,0 +1,93 @@
+<div class="container">
+  <h1 class="mt-5 mb-5">List Card Car</h1>
+  <a class="btn btn-warning" routerLink="/card/create">Create card car</a>
+  <!--        <form >-->
+  <div>
+    <input [(ngModel)]="date1" type="date" name="date1" placeholder="Search address 1" style="margin-right: 10px">
+    <input [(ngModel)]="date2" type="date" name="date2" placeholder="Search address 2" style="margin-right: 10px">
+    <input [(ngModel)]="address1Search" type="text" name="address1Search" placeholder="Search address 1"
+           style="margin-right: 10px">
+    <input [(ngModel)]="address2Search" type="text" name="address2Search" placeholder="Search address 2"
+           style="margin-right: 10px">
+
+    <input type="submit" value="Search" (click)="search1()">
+  </div>
+  <!--        </form>-->
+  <div class="mt-2">
+    <table class="table table-bordered table-primary table-striped">
+      <thead>
+      <tr>
+        <th>STT</th>
+        <th>ADDRESS 1</th>
+        <th>ADDRESS 2</th>
+        <th>PRICE</th>
+        <th>START DATE</th>
+        <th>START HOUR</th>
+        <th>HOUSE CAR</th>
+        <th>COUNT</th>
+        <th>ACTION</th>
+        <th>ACTION</th>
+        <th>ACTION</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let x of cards | paginate: {itemsPerPage: 3, currentPage: pageNumber}; index as i">
+        <td>{{(pageNumber - 1) * 3 + i + 1}}</td>
+        <td>{{x.address1}}</td>
+        <td>{{x.address2}}</td>
+        <td>{{x.price}}</td>
+        <td>{{x.startDate|date:"MM/dd/yyyy"}}</td>
+        <td>{{x.hourStart}}</td>
+        <td>{{x.houseCar.name}}</td>
+        <td>{{x.count}}</td>
+        <td>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#view"
+                  (click)="findCard(x.id)">
+            Booking
+          </button>
+        </td>
+        <td>
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#edit"
+                  [routerLink]="['card/edit',x.id]"> Edit
+          </button>
+        </td>
+        <td>
+          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delete"
+                  [routerLink]="['card/delete',x.id]">
+            Delete
+          </button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+    <div *ngIf="card" class="modal fade " id="view" tabindex="-1" aria-labelledby="exampleModalLabel"
+         aria-hidden="true"
+         style="color: black">
+      <div class="modal-dialog ">
+        <div class="modal-content bg-light">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div *ngIf="card.count > 0; else not" class="modal-body">
+            <p>Are you sure booking from <strong>{{card.address1}}</strong>
+              to <strong>{{card.address2}}</strong> in <strong>{{card.startDate}}</strong>
+              at <strong>{{card.hourStart}}</strong></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button class="btn btn-danger" data-bs-dismiss="modal" type="submit"
+                    (click)="bookingCard(card.id)">Confirm
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <pagination-controls (pageChange)="pageNumber = $event"></pagination-controls>
+  </div>
+  <ng-template #not>
+    <div class="modal-body">
+      <p><strong>Sold Out</strong></p>
+    </div>
+  </ng-template>
+
+</div>

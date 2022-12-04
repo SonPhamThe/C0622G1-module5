@@ -1,0 +1,41 @@
+<h1>Xoá sản phẩm</h1>
+<form [formGroup]="cardForm" *ngIf="cardForm" (ngSubmit)="deleteCard(id)">
+  <table>
+    <tr>
+      <td>Price</td>
+      <td><input type="number" formControlName="price"></td>
+    </tr>
+    <tr>
+      <td>Address1</td>
+      <td><input type="text" formControlName="address1"></td>
+    </tr>
+    <tr>
+      <td>Address2</td>
+      <td><input type="text" formControlName="address2"></td>
+    </tr>
+    <tr>
+      <td>Start Date</td>
+      <td><input type="text" formControlName="startDate"></td>
+    </tr>
+    <tr>
+      <td>Hour Date</td>
+      <td><input type="text" formControlName="hourStart"></td>
+    </tr>
+    <tr>
+      <td>House Car</td>
+      <select formControlName="houseCar" [compareWith]="equals" >
+        <option *ngFor="let item of houseCarList"  [ngValue]="item" >{{item.name}}</option>
+      </select>
+    </tr>
+    <tr>
+      <td>Count</td>
+      <td><input type="number" formControlName="count"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <button>Delete</button>
+      </td>
+    </tr>
+  </table>
+</form>

@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   api_url: 'http://localhost:3000/products',
-  api_url_cate: 'http://localhost:3000/categories',
+  api_url_cate: 'http://localhost:3000/category',
   url_findById: 'http://localhost:3000/products?id=',
   url_edit: 'http://localhost:3000/products/'
 };

@@ -1,0 +1,137 @@
+<div class="container">
+  <h2>Form Create Student</h2>
+  <a class="btn btn-warning" routerLink="">List Student</a>
+  <form [formGroup]="studentForm" (ngSubmit)="submit()" autocomplete="off">
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input
+        formControlName="name"
+        type="text"
+        class="form-control"
+        id="name"
+        [ngClass]=" studentForm.controls['name'].touched
+              ? studentForm.controls['name'].invalid
+              ? 'is-invalid'
+              : 'is-valid'
+            : ''
+        "
+      />
+      <div class="invalid-feedback">
+        <div
+          *ngIf="
+            studentForm.controls['name'].hasError('required') &&
+            studentForm.controls['name'].touched
+          "
+        >
+          Please enter a name.
+        </div>
+        <div
+          *ngIf="
+            studentForm.controls['name'].hasError('minlength') &&
+            studentForm.controls['name'].touched
+          "
+        >
+          A name's min length is 5 characters.
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="dayOfBirth" class="form-label">Date Of Birth</label>
+      <input
+        formControlName="dayOfBirth"
+        type="date"
+        class="form-control"
+        id="dayOfBirth"
+        [ngClass]=" studentForm.controls['dayOfBirth'].touched
+              ? studentForm.controls['dayOfBirth'].invalid
+              ? 'is-invalid'
+              : 'is-valid'
+            : ''
+        "
+      />
+      <div class="invalid-feedback">
+        <div
+          *ngIf="
+            studentForm.controls['dayOfBirth'].hasError('required') &&
+            studentForm.controls['dayOfBirth'].touched
+          "
+        >
+          Please enter the day of birth.
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="score" class="form-label">Score</label>
+      <input
+        formControlName="score"
+        type="number"
+        class="form-control"
+        id="score"
+        [ngClass]="
+          studentForm.controls['score'].touched
+            ? studentForm.controls['score'].invalid
+              ? 'is-invalid'
+              : 'is-valid'
+            : ''
+        "
+      />
+      <div class="invalid-feedback">
+        <div
+          *ngIf="
+            studentForm.controls['score'].hasError('required') &&
+            studentForm.controls['score'].touched
+          "
+        >
+          Please enter the score.
+        </div>
+        <div
+          *ngIf="
+            studentForm.controls['score'].hasError('min') &&
+            studentForm.controls['score'].touched
+          "
+        >
+          Min score is 0.
+        </div>
+        <div
+          *ngIf="
+            studentForm.controls['score'].hasError('max') &&
+            studentForm.controls['score'].touched
+          "
+        >
+          Max score is 10.
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="score" class="form-label">Class Room:</label>
+      <select class = "form-control" formControlName="class" [ngClass]="
+          studentForm.controls['class'].touched
+            ? studentForm.controls['class'].invalid
+              ? 'is-invalid'
+              : 'is-valid'
+            : ''
+        ">
+        <option value="" selected>Select</option>
+        <option *ngFor="let item of classList" [ngValue]="item">{{item.name}}</option>
+      </select>
+      <div class="invalid-feedback">
+        <div
+          *ngIf="
+            studentForm.controls['class'].hasError('required') &&
+            studentForm.controls['class'].touched
+          "
+        >
+          Please enter the class.
+        </div>
+      </div>
+    </div>
+    <div>
+      <button type="submit" class="btn btn-primary" [disabled]="!studentForm.valid">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,180 @@
+{
+  "students": [
+    {
+      "id": 2,
+      "name": "Carlota Strainge",
+      "dayOfBirth": "2022-11-01",
+      "score": 5.5,
+      "class": {
+        "id": 2,
+        "name": "C02"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Izak Ashlee",
+      "dayOfBirth": "2022-11-10",
+      "score": 3.5,
+      "class": {
+        "id": 4,
+        "name": "C04"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Hertha Bristoe",
+      "dayOfBirth": "2022-11-11",
+      "score": 7.7,
+      "class": {
+        "id": 5,
+        "name": "C05"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Hertha Fernan",
+      "dayOfBirth": "2022-11-16",
+      "score": 7.4,
+      "class": {
+        "id": 6,
+        "name": "C06"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Gretal Heningham",
+      "dayOfBirth": "1998-08-19",
+      "score": 8.5,
+      "class": {
+        "id": 7,
+        "name": "C07"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Davin Stapele",
+      "dayOfBirth": "1994-02-03",
+      "score": 5.5,
+      "class": {
+        "id": 8,
+        "name": "C08"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Davin Stapele",
+      "dayOfBirth": "2004-11-30",
+      "score": 5.5,
+      "class": {
+        "id": 8,
+        "name": "C08"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Hertha Fernan",
+      "dayOfBirth": "1990-04-28",
+      "score": 7.4,
+      "class": {
+        "id": 6,
+        "name": "C06"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Hertha Fernan",
+      "dayOfBirth": "1995-05-15",
+      "score": 7.4,
+      "class": {
+        "id": 6,
+        "name": "C06"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Izak Ashlee",
+      "dayOfBirth": "1997-08-17",
+      "score": 3.5,
+      "class": {
+        "id": 4,
+        "name": "C04"
+      }
+    },
+    {
+      "id": 13,
+      "name": "Carlota Strainge",
+      "dayOfBirth": "2001-11-03",
+      "score": 5.5,
+      "class": {
+        "id": 2,
+        "name": "C02"
+      }
+    },
+    {
+      "id": 14,
+      "name": "Allistir Geer",
+      "dayOfBirth": "1996-06-16",
+      "score": 7.5,
+      "class": {
+        "id": 3,
+        "name": "C03"
+      }
+    },
+    {
+      "id": 15,
+      "name": "hainguqua",
+      "dayOfBirth": "2022-11-12",
+      "score": 0,
+      "class": {
+        "id": 4,
+        "name": "C04"
+      }
+    },
+    {
+      "id": 16,
+      "name": "hainguquadi",
+      "dayOfBirth": "2022-11-18",
+      "score": 7,
+      "class": {
+        "id": 8,
+        "name": "C08"
+      }
+    },
+    {
+      "id": 17,
+      "name": "hai ngu qua di",
+      "dayOfBirth": "2022-12-23",
+      "score": 0,
+      "class": {
+        "id": 7,
+        "name": "C07"
+      }
+    }
+  ],
+  "class": [
+    {
+      "id": 3,
+      "name": "C03"
+    },
+    {
+      "id": 4,
+      "name": "C04"
+    },
+    {
+      "id": 5,
+      "name": "C05"
+    },
+    {
+      "id": 6,
+      "name": "C06"
+    },
+    {
+      "id": 7,
+      "name": "C07"
+    },
+    {
+      "id": 8,
+      "name": "C08"
+    }
+  ]
+}
