@@ -1,0 +1,35 @@
+.boxed {
+  width: 400px;
+  height: 550px;
+}
+
+.boxed {
+  border: 5px solid;
+  border-image-slice: 1;
+  border-color: rgb(189, 214, 236);
+  padding: 5px;
+  border-radius: 8px;
+  background-color: transparent;
+  box-shadow: 5px 5px 7px 6px  rgb(238, 243, 247);
+}
+
+* {
+  font-family: sans-serif;
+}
+
+button {
+  height: 32px;
+  width: 200px;
+  border-radius: 20px;
+}
+
+.auction {
+  margin-top: 32px;
+  display: flex;
+  box-shadow: 1px 1px 17px rgba(0, 0, 0, 0.35);
+  background-image: url("https://media.istockphoto.com/id/897099028/photo/courtroom-concept.jpg?s=612x612&w=0&k=20&c=_lIviY41F6rg4ZsTwhZMai94hqPHZfHA3pBrYXrhddI=");
+}
+
+.borderFull {
+  height: 100%;
+}

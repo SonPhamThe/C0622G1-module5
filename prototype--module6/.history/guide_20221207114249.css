@@ -1,0 +1,26 @@
+.boxed {
+  width: 400px;
+  height: 550px;
+}
+
+.boxed {
+  border: 5px solid;
+  border-image-slice: 1;
+  border-color: red;
+  padding: 5px;
+  border-radius: 20px;
+  box-shadow: 1px 1px aliceblue(126, 116, 116);
+}
+
+.search {
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.fa-solid {
+  color: #0b57d0;
+  height: 1.125rem;
+  margin: 0.55rem;
+  visibility: initial;
+  width: 1.125rem;
+}

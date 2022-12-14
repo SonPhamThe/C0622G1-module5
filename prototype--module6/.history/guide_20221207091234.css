@@ -1,0 +1,12 @@
+input{
+  border: 1px solid CornflowerBlue;
+  border-radius: 4px;
+  padding:8px;
+  display:block;
+  margin: 6px;
+}
+
+input[type="text"]::placeholder {
+  text-align: center;
+}
+

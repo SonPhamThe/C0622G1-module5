@@ -1,0 +1,18 @@
+.boxed {
+  width: 300px;
+  height: 550px;
+}
+
+.boxed {
+  border: 5px solid;
+  border-image-slice: 1;
+  border-color: aliceblue;
+  padding: 5px;
+  border-radius: 20px;
+  box-shadow: 5px 10px rgb(126, 116, 116);
+}
+
+.search {
+  border-radius: 8px;
+  margin-bottom: 12px;
+}

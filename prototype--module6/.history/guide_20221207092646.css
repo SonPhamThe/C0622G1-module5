@@ -1,0 +1,12 @@
+.boxed {
+  width: 300px;
+  height: 500px;
+  background-color: black;
+}
+
+.boxed {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right bottom, #ffa400, #ff6bcb);
+  border-radius: ;
+}

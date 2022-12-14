@@ -1,0 +1,25 @@
+.boxed {
+  width: 400px;
+  height: 550px;
+}
+
+.boxed {
+  border: 5px solid;
+  border-image-slice: 1;
+  border-color: rgb(189, 214, 236);
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 1px 1px
+}
+
+.search {
+  border-radius: 12px;
+}
+
+.fa-solid {
+  color: #0b57d0;
+  height: 1.125rem;
+  margin: 0.55rem;
+  visibility: initial;
+  width: 1.125rem;
+}
